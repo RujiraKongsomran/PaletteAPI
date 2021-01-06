@@ -6,13 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLightVibrant"
+        app:layout_constraintEnd_toEndOf="@+id/tvLightVibrant"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvLightVibrant"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="6"
+        app:srcCompat="@drawable/blueberries" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/tvLightVibrant"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Light Vibrant"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvVibrant"
+        app:layout_constraintEnd_toEndOf="@+id/tvVibrant"
+        app:layout_constraintStart_toStartOf="@+id/tvVibrant"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/tvVibrant"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Vibrant"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDarkVibrant"
+        app:layout_constraintEnd_toEndOf="@+id/tvDarkVibrant"
+        app:layout_constraintStart_toStartOf="@+id/tvDarkVibrant"
+        app:layout_constraintTop_toBottomOf="@+id/tvLightVibrant"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/tvDarkVibrant"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Dark Vibrant"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvLightMuted"
+        app:layout_constraintEnd_toEndOf="@+id/tvLightMuted"
+        app:layout_constraintStart_toStartOf="@+id/tvLightMuted"
+        app:layout_constraintTop_toBottomOf="@+id/tvVibrant"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/tvLightMuted"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Light Muted"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvMuted"
+        app:layout_constraintEnd_toEndOf="@+id/tvMuted"
+        app:layout_constraintStart_toStartOf="@+id/tvMuted"
+        app:layout_constraintTop_toBottomOf="@+id/tvDarkVibrant"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/tvMuted"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Muted"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDarkMuted"
+        app:layout_constraintEnd_toEndOf="@+id/tvDarkMuted"
+        app:layout_constraintStart_toStartOf="@+id/tvDarkMuted"
+        app:layout_constraintTop_toBottomOf="@+id/tvLightMuted"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/tvDarkMuted"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Dark Muted"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMuted"
+        app:layout_constraintVertical_weight="1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
